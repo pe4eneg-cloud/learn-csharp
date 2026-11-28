@@ -227,7 +227,7 @@ for (int i = 1; i <= 5; i++)
 
             <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
               <p className="text-sm text-amber-900">
-                <strong>⚠ Бесконечный цикл:</strong> если условие никогда не станет false, цикл будет крутиться вечно.
+                <strong> Бесконечный цикл:</strong> если условие никогда не станет false, цикл будет крутиться вечно.
                 Например: <code className="px-1.5 py-0.5 bg-amber-100 rounded font-mono">for (;;) { }</code> или <code className="px-1.5 py-0.5 bg-amber-100 rounded font-mono">while (true) { }</code>.
                 Игра зависнет!
               </p>
@@ -271,7 +271,7 @@ foreach (string item in inventory)
 
             <div className="bg-slate-50 border border-slate-200 rounded-lg p-4">
               <p className="text-sm text-slate-700">
-                <strong>💡 Когда использовать foreach?</strong> Когда тебе не важен номер элемента,
+                <strong> Когда использовать foreach?</strong> Когда тебе не важен номер элемента,
                 а нужно просто пройтись по всем. Например, "нанести урон всем врагам в списке".
               </p>
             </div>
@@ -318,7 +318,7 @@ Debug.Log("Игрок сбежал!");`}</pre>
 
             <div className="bg-slate-50 border border-slate-200 rounded-lg p-4">
               <p className="text-sm text-slate-700">
-                <strong>💡 Разница:</strong> <code className="font-mono">while</code> — "пока можешь, делай".
+                <strong> Разница:</strong> <code className="font-mono">while</code> — "пока можешь, делай".
                 <code className="font-mono">do...while</code> — "сделай хотя бы раз, потом решай".
               </p>
             </div>
@@ -443,7 +443,7 @@ public class WaveSystem : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("=== Начало волны ===");
+        Debug.Log(" Начало волны ");
 
         // Спавним врагов циклом for
         for (int i = 1; i <= enemyCount; i++)
@@ -462,7 +462,7 @@ public class WaveSystem : MonoBehaviour
             }
         }
 
-        Debug.Log("=== Волна завершена ===");
+        Debug.Log(" Волна завершена ");
     }
 }`}</pre>
             </div>

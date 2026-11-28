@@ -15,9 +15,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'CSharp.Learn',
   description: 'Основы C# с примерами из Unity',
-  other: {
-    'google-site-verification': 'google9e95bdb7de581269.html',
-  },
 }
 
 

@@ -3,8 +3,9 @@ import Link from 'next/link';
 const lessons = [
   { id: 1, title: 'Типы данных в C#', description: 'Разбираем int, float, string, bool и другие типы на примерах из Unity.' },
   { id: 2, title: 'Арифметика в C#', description: 'Операции +, -, *, /, %, инкремент, декремент и приоритет вычислений.' },
-  { id: 3, title: 'Операторы и выражения', description: 'Условия if/else, циклы for и while, логические операторы.' },
-  { id: 4, title: 'Массивы и списки', description: 'Скоро будет доступно.', locked: true },
+  { id: 3, title: 'Условные выражения', description: 'Операции сравнения (==, <, >) и логические операторы (&&, ||, !).' },
+  { id: 4, title: 'Циклы', description: 'for, foreach, while, do...while, break и continue.' },
+  { id: 5, title: 'Массивы и списки', description: 'Скоро будет доступно.', locked: true },
 ];
 
 const toc = [

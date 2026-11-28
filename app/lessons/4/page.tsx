@@ -8,7 +8,8 @@ const lessons = [
   { id: 2, title: 'Арифметика в C#', description: 'Операции +, -, *, /, %, инкремент, декремент и приоритет вычислений.' },
   { id: 3, title: 'Условные выражения', description: 'Операции сравнения (==, <, >) и логические операторы (&&, ||, !).' },
   { id: 4, title: 'Циклы', description: 'for, foreach, while, do...while, break и continue.' },
-  { id: 5, title: 'Массивы и списки', description: 'Скоро будет доступно.', locked: true },
+  { id: 5, title: 'Методы', description: 'Создаём свои методы, параметры, возвращаемые значения.' },
+  { id: 6, title: 'Массивы и списки', description: 'Скоро будет доступно.', locked: true },
 ];
 
 const toc = [
@@ -74,27 +75,28 @@ export default function Lesson4Page() {
   const [quizResults, setQuizResults] = useState<Record<number, boolean>>({});
 
   const quiz = [
-    {
-      q: 'Сколько раз выполнится цикл: for (int i = 0; i < 3; i++)?',
-      options: ['2 раза', '3 раза', '4 раза', 'Бесконечно'],
-      correct: '3 раза',
-    },
-    {
-      q: 'Какой цикл выполнится хотя бы один раз, даже если условие false?',
-      options: ['for', 'while', 'do...while', 'foreach'],
-      correct: 'do...while',
-    },
-    {
-      q: 'Что делает оператор break?',
-      options: ['Пропускает текущую итерацию', 'Выходит из цикла полностью', 'Перезапускает цикл', 'Ничего'],
-      correct: 'Выходит из цикла полностью',
-    },
-    {
-      q: 'Какой цикл лучше использовать для перебора массива?',
-      options: ['for', 'foreach', 'while', 'do...while'],
-      correct: 'foreach',
-    },
-  ];
+  {
+    q: 'Сколько раз выполнится цикл: for (int i = 0; i < 3; i++)?',
+    options: ['4 раза', '3 раза', 'Бесконечно', '2 раза'],
+    correct: '3 раза',
+  },
+  {
+    q: 'Какой цикл выполнится хотя бы один раз, даже если условие false?',
+    options: ['while', 'do...while', 'for', 'foreach'],
+    correct: 'do...while',
+  },
+  {
+    q: 'Что делает оператор break?',
+    options: ['Пропускает текущую итерацию', 'Ничего', 'Перезапускает цикл', 'Выходит из цикла полностью'],
+    correct: 'Выходит из цикла полностью',
+  },
+  {
+    q: 'Какой цикл лучше использовать для перебора массива?',
+    options: ['while', 'do...while', 'for', 'foreach'],
+    correct: 'foreach',
+  },
+];
+
 
   const checkAnswer = (qIndex: number, answer: string) => {
     const isCorrect = answer === quiz[qIndex].correct;

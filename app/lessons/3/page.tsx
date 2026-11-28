@@ -5,7 +5,8 @@ const lessons = [
   { id: 2, title: 'Арифметика в C#', description: 'Операции +, -, *, /, %, инкремент, декремент и приоритет вычислений.' },
   { id: 3, title: 'Условные выражения', description: 'Операции сравнения (==, <, >) и логические операторы (&&, ||, !).' },
   { id: 4, title: 'Циклы', description: 'for, foreach, while, do...while, break и continue.' },
-  { id: 5, title: 'Массивы и списки', description: 'Скоро будет доступно.', locked: true },
+  { id: 5, title: 'Методы', description: 'Создаём свои методы, параметры, возвращаемые значения.' },
+  { id: 6, title: 'Массивы и списки', description: 'Скоро будет доступно.', locked: true },
 ];
 
 const toc = [
@@ -393,12 +394,12 @@ public class DoorChecker : MonoBehaviour
             </div>
           </section>
 
-          <nav className="flex justify-between pt-8 border-t border-slate-200">
+                   <nav className="flex justify-between pt-8 border-t border-slate-200">
             <Link href="/lessons/2" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
               &larr; Предыдущий: Арифметика
             </Link>
-            <Link href="/lessons/4" className="text-sm text-slate-400 cursor-not-allowed">
-              Следующий урок скоро &rarr;
+            <Link href="/lessons/4" className="text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors">
+              Следующий: Циклы &rarr;
             </Link>
           </nav>
         </article>

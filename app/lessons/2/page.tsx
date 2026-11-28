@@ -5,7 +5,8 @@ const lessons = [
   { id: 2, title: 'Арифметика в C#', description: 'Операции +, -, *, /, %, инкремент, декремент и приоритет вычислений.' },
   { id: 3, title: 'Условные выражения', description: 'Операции сравнения (==, <, >) и логические операторы (&&, ||, !).' },
   { id: 4, title: 'Циклы', description: 'for, foreach, while, do...while, break и continue.' },
-  { id: 5, title: 'Массивы и списки', description: 'Скоро будет доступно.', locked: true },
+  { id: 5, title: 'Методы', description: 'Создаём свои методы, параметры, возвращаемые значения.' },
+  { id: 6, title: 'Массивы и списки', description: 'Скоро будет доступно.', locked: true },
 ];
 
 const toc = [

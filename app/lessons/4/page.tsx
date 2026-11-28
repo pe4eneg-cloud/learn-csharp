@@ -556,13 +556,13 @@ public class WaveSystem : MonoBehaviour
           </section>
 
           <nav className="flex justify-between pt-8 border-t border-slate-200">
-            <Link href="/lessons/3" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
-              &larr; Предыдущий: Условные выражения
-            </Link>
-            <Link href="/lessons/5" className="text-sm text-slate-400 cursor-not-allowed">
-              Следующий урок скоро &rarr;
-            </Link>
-          </nav>
+  <Link href="/lessons/3" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+    &larr; Предыдущий: Условные выражения
+  </Link>
+  <Link href="/lessons/5" className="text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors">
+    Следующий: Методы &rarr;
+  </Link>
+</nav>
         </article>
       </div>
     </main>

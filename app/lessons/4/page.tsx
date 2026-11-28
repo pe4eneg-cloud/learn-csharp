@@ -38,16 +38,37 @@ export default function Lesson4Page() {
   const [step, setStep] = useState(1);
   const [output, setOutput] = useState<string[]>([]);
 
-  const runSimulation = () => {
-    const result: string[] = [];
-    for (let i = start; i < end; i += step) {
-      result.push(`i = ${i}`);
+ const runSimulation = () => {
+  // Защита от бесконечного цикла
+  if (step === 0) {
+    setOutput(['⚠ Шаг не может быть равен 0! Цикл будет бесконечным.']);
+    return;
+  }
+  
+  // Защита от отрицательного шага при движении вперёд
+  if (step < 0 && start < end) {
+    setOutput(['⚠ Отрицательный шаг с start < end — цикл не выполнится.']);
+    return;
+  }
+
+  const result: string[] = [];
+  let safetyCounter = 0;
+  const maxIterations = 1000; // защита от зависания
+
+  for (let i = start; i < end; i += step) {
+    result.push(`i = ${i}`);
+    safetyCounter++;
+    if (safetyCounter > maxIterations) {
+      result.push('⚠ Превышено 1000 итераций — остановлено');
+      break;
     }
-    if (result.length === 0) {
-      result.push('Цикл не выполнился ни разу (условие сразу false)');
-    }
-    setOutput(result);
-  };
+  }
+  
+  if (result.length === 0) {
+    result.push('Цикл не выполнился ни разу (условие сразу false)');
+  }
+  setOutput(result);
+};
 
   const [quizAnswers, setQuizAnswers] = useState<Record<number, string>>({});
   const [quizResults, setQuizResults] = useState<Record<number, boolean>>({});
